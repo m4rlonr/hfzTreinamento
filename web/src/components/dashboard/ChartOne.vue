@@ -1,6 +1,7 @@
 <template>
   <DxChart
     id="chart"
+    :rotated="true"
     :data-source="$store.state.graficoSaldoContas"
     title="Saldo em Contas"
   >
@@ -55,3 +56,8 @@ export default {
   }
 }
 </script>
+<style>
+#chart{
+  height: 300px;
+}
+</style>

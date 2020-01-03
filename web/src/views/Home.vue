@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <v-content>
+    <!--<v-content>-->
       <v-row>
         <v-col >
         <chart-one/>
@@ -14,13 +14,11 @@
           <chart-two/>
         </v-col>
       </v-row>
-       <!--
         <v-row>
         <v-col>
         <chart-four/>
         </v-col>
       </v-row>
-      -->
-    </v-content>
+    <!--</v-content>-->
   </div>
 </template>
