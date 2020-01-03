@@ -1,6 +1,8 @@
 <template>
   <v-app id="app">
     <v-navigation-drawer
+      color="#ECF3FF"
+      :touchless="true"
       v-model="drawer"
       :clipped="$vuetify.breakpoint.lgAndUp"
       app
@@ -19,7 +21,7 @@
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>
+            <v-list-item-title id="listaT">
               {{ item.name }}
             </v-list-item-title>
           </v-list-item-content>
@@ -30,14 +32,14 @@
     <v-app-bar
       :clipped-left="$vuetify.breakpoint.lgAndUp"
       app
-      color="blue darken-3"
+      color="#1D3C78"
       dark
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-toolbar-title
         class="ml-0 pl-4"
       >
-        <span class="hidden-sm-and-down">Hifuzion Financeiro</span>
+        <span id="titulo" class="hidden-sm-and-down"><strong>Hifuzion Financeiro</strong></span>
       </v-toolbar-title>
       <v-spacer />
       <v-btn icon>
@@ -62,3 +64,13 @@ export default {
   }
 }
 </script>
+<style>
+#titulo {
+  font-size: 30px;
+}
+#listaT{
+  font-size: 15px;
+  height:25px;
+  padding: 3px;
+}
+</style>

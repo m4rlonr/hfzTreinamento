@@ -1,7 +1,6 @@
 <template>
   <DxChart
     id="chart"
-    :rotated="true"
     :data-source="$store.state.graficoGastoFornecedor"
     @pointClick="onPointClick"
   >
@@ -25,17 +24,15 @@
      <DxSeries
       value-field="gasto"
       name="Gastos"
-      color="#c3a2cc"
-      :corner-radius= 10
+      color="#6495ED"
+      type="bar"
     />
     <DxSeries
       value-field="pago"
       name="Pagos"
-      color="#b7b5e0"
-      :corner-radius= 10
+      color="#000080"
     />
     <DxLegend :visible="true"/>
-    <DxExport :enabled="false"/>
 
   </DxChart>
 </template>
@@ -44,7 +41,6 @@
 import DxChart, {
   DxCommonSeriesSettings,
   DxLabel,
-  DxExport,
   DxSeries,
   DxTitle,
   DxLegend
@@ -56,7 +52,6 @@ export default {
     DxTitle,
     DxCommonSeriesSettings,
     DxLabel,
-    DxExport,
     DxSeries,
     DxLegend
   },

@@ -13,7 +13,7 @@ export default new Vuex.Store({
     graficoSaldoContas: [],
     graficoGastoFornecedor: [],
     agendaPagamentos: [],
-    loadGastosTitulos: []
+    graficoValorTitulos: []
   },
   mutations: {
     setFornecedores (state, lista) {
@@ -36,6 +36,9 @@ export default new Vuex.Store({
     },
     setAgendaPagamentos (state, lista) {
       state.agendaPagamentos = lista
+    },
+    setGraficoValorTitulos (state, lista) {
+      state.graficoValorTitulos = lista
     }
   },
   actions: {

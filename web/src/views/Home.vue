@@ -6,12 +6,12 @@
         <chart-one/>
         </v-col>
         <v-col >
-        <chart-two/>
+          <chart-three/>
         </v-col>
       </v-row>
       <v-row>
         <v-col>
-        <chart-three/>
+          <chart-two/>
         </v-col>
       </v-row>
        <!--

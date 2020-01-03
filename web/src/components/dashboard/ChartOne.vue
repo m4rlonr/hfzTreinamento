@@ -1,7 +1,6 @@
 <template>
   <DxChart
     id="chart"
-    :rotated="true"
     :data-source="$store.state.graficoSaldoContas"
     title="Saldo em Contas"
   >
@@ -11,7 +10,10 @@
       :customize-tooltip="customizeTooltip"
     />
     <DxLabel :visible="true"/>
-    <DxSeries type="bar"/>
+    <DxSeries
+    type="bar"
+    color="#00CD00"
+    />
     <DxLegend :visible="false"/>
   </DxChart>
 </template>

@@ -1,6 +1,7 @@
 <template>
   <DxChart
     id="chart"
+    :rotated="true"
     :data-source="$store.state.graficoValorTitulos"
     title="Valores de titulos em aberto"
   >
@@ -13,6 +14,7 @@
     <DxSeries
     type="bar"
     name="Saldos"
+    color="#EE0000"
     />
     <DxLegend :visible="true"/>
   </DxChart>
