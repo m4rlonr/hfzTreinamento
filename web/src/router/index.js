@@ -13,14 +13,14 @@ const routes = [
   {
     path: '/fornecedores',
     name: 'Fornecedores',
-    icon: 'mdi-account',
+    icon: 'mdi-account-multiple-outline',
     component: () => import('@/views/Fornecedores.vue')
   },
   {
     path: '/contas',
     name: 'Contas',
     // icon: 'mdi-email',
-    icon: 'mdi-bank',
+    icon: 'mdi-coin',
     component: () => import('@/views/Contas.vue')
   },
   {
@@ -32,7 +32,7 @@ const routes = [
   {
     path: '/pagamentos',
     name: 'Pagamentos',
-    icon: 'mdi-domain',
+    icon: 'mdi-check-all',
     component: () => import('@/views/Pagamentos.vue')
   }
 ]
