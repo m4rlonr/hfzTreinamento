@@ -1,5 +1,6 @@
 import 'devextreme/dist/css/dx.common.css'
 import 'devextreme/dist/css/dx.light.css'
+import './devextreme.css'
 import 'devextreme/dist/js/localization/dx.messages.pt'
 import ptMessage from 'devextreme/localization/messages/pt'
 import {
