@@ -1,2 +1,4 @@
 Observações.md
 deploy.sh
+npm-debug.log
+.travis.yml
