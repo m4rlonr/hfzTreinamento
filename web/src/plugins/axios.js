@@ -4,7 +4,8 @@ import Vue from 'vue'
 import axios from 'axios'
 
 let config = {
-  baseURL: process.env.VUE_APP_BASE_URL
+  // baseURL: process.env.VUE_APP_BASE_URL
+  baseURL: 'http://localhost:8000/'
 }
 
 const _axios = axios.create(config)
